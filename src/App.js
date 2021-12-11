@@ -13,12 +13,13 @@ class App extends Component {
 
     this.geraFrase = this.geraFrase.bind(this);
 
-    this.frases = ['Siga os bons e aprenda com eles.', 'O bom-senso vale mais do que muito conhecimento.', 
-    'O riso é a menor distância entre duas pessoas.', 
-    'Deixe de lado as preocupações e seja feliz.',
-    'Realize o óbvio, pense no improvável e conquiste o impossível.',
-    'Acredite em milagres, mas não dependa deles.',
-    'A maior barreira para o sucesso é o medo do fracasso.'];
+    this.frases = ['A vida que está por vir é muito mais importante do que aquela que ficou no passado.', 'A estrada para o sucesso está sempre em construção.', 
+    'A vida não é um problema a ser resolvido, mas sim uma realidade para ser apreciada.', 
+    'Deixe para trás aquilo que não te leva para a frente.',
+    'Se você fizer as coisas sempre do mesmo jeito, ficará sempre no mesmo lugar.',
+    'Acredite: os grandes desafios são colocados no caminho das pessoas de maior caráter. ',
+    'Viva o hoje. Afinal, o ontem já foi e pode ser que o amanhã não venha.','A vida não fica mais fácil, só que você se torna mais forte. ',
+     'Antes de correr, aprenda a andar. Tudo tem o seu tempo.','Duvide do que vem fácil, mas nunca desista daquilo que é difícil. ' ];
   }
   geraFrase(){
     let state = this.state;
@@ -30,6 +31,7 @@ class App extends Component {
   render() {
     return(
     <div className="container">
+      <h1>Frases de reflexão</h1>
       <img className="img" src={paz}alt="paz" ></img>
       <Botao nome="Gerar Frase" acaoBtn={this.geraFrase}/>
       <h3 className="textoFrase">{this.state.textoFrase}</h3>
