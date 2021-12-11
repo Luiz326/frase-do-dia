@@ -17,3 +17,6 @@ button:hover{
     opacity: 0.8;
     transition: all 0.60s;
 }
+button:active{
+    background-color: #8499D9;
+}
