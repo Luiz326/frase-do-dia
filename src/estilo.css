@@ -1,0 +1,22 @@
+body{
+    background-color: #9CABD9;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.img{
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.textoFrase{
+    font-style: italic ;
+    color: #590202;
+    text-align: center;
+}
